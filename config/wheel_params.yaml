@@ -1,0 +1,11 @@
+# wheel_params.yaml — Parámetros cinemáticos calibrados
+# RC-1: La Manzana del Tambo — CapyTown ESAN 2026-I
+
+wheel_radius: 0.0325          # m — radio de rueda Yahboom
+wheel_separation: 0.24607     # m — b_eff calibrado (UMBmark, 3 iteraciones)
+encoder_ticks_per_rev: 1440   # ticks por revolución
+
+# Historial de calibración b_eff:
+#   Run 1: b_eff=0.20000 → error 7.07%  → sugerido 0.21522
+#   Run 2: b_eff=0.21522 → error 11.53% → sugerido 0.24326
+#   Run 3: b_eff=0.24326 → error 1.14%  → sugerido 0.24607  ← ADOPTADO

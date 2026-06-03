@@ -1,0 +1,5 @@
+# Los PNGs se agregan después de correr error_odom.py
+# Archivos esperados:
+#   trayectoria_run1.png
+#   trayectoria_run2.png
+#   trayectoria_run3.png
