@@ -1,0 +1,25 @@
+rosbag2_bagfile_information:
+  version: 4
+  storage_identifier: sqlite3
+  duration:
+    nanoseconds: 157200000000
+  starting_time:
+    nanoseconds_since_epoch: 1748800240000000000
+  message_count: 15554
+  topics_with_message_count:
+    - topic_metadata:
+        name: /odom
+        type: nav_msgs/msg/Odometry
+        serialization_format: cdr
+        offered_qos_profiles: ''
+      message_count: 7861
+    - topic_metadata:
+        name: /cmd_vel
+        type: geometry_msgs/msg/Twist
+        serialization_format: cdr
+        offered_qos_profiles: ''
+      message_count: 7693
+  relative_file_paths:
+    - tambo_G0_run1/tambo_G0_run1_0.db3
+  compression_format: ''
+  compression_mode: ''

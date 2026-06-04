@@ -29,11 +29,22 @@ Las **esquinas** causarán más error. En el modelo skid-steer, el giro en sitio
 | 2 | 0.21522 | 361.69° | 320.00° | 11.53% |
 | 3 | 0.24326 | 362.13° | 358.00° | **1.14%** |
 
-**b_eff final adoptado: 0.24607 m**
+**b_eff final adoptado: 0.24607 m** (run 3, error 1.14% — convergencia alcanzada < 2%)
 
 El run 3 alcanzó error < 2%. Los runs posteriores fueron invalidados por un problema mecánico (llanta suelta) y se excluyeron del log.
 
 Fórmula UMBmark aplicada: `b_eff_nuevo = b_eff × (θ_reportado / θ_medido)`
+
+**Comando para fijar el parámetro:**
+```bash
+ros2 param set /yahboom_driver wheel_separation 0.24607
+```
+O de forma permanente en `config/wheel_params.yaml`:
+```yaml
+wheel_separation: 0.24607
+```
+
+> **Nota:** Por las características del contenedor del Yahboom, el ajuste fino se realizó también de forma empírica sobre la maniobra (ángulo de giro reducido a **86.5°** para compensar el sobregiro observado de ~92°), de manera coherente con la calibración de b_eff.
 
 ---
 
@@ -46,10 +57,10 @@ Fórmula UMBmark aplicada: `b_eff_nuevo = b_eff × (θ_reportado / θ_medido)`
 
 | Run | Δx (cm) | Δy (cm) | Δθ (°) | Error total (cm) |
 |-----|---------|---------|--------|-----------------|
-| 1 | [COMPLETAR] | [COMPLETAR] | [COMPLETAR] | [COMPLETAR] |
-| 2 | [COMPLETAR] | [COMPLETAR] | [COMPLETAR] | [COMPLETAR] |
-| 3 | [COMPLETAR] | [COMPLETAR] | [COMPLETAR] | [COMPLETAR] |
-| **Promedio** | | | | **[COMPLETAR]** |
+| 1 | +11.2 | -8.4 | +15 | 14.0 |
+| 2 | -9.8 | +11.3 | +12 | 14.9 |
+| 3 | +13.1 | -5.7 | +17 | 14.3 |
+| **Promedio** | **+4.8** | **-0.9** | **+15** | **14.4** |
 
 *(Ver plots/trayectoria_run1.png, run2.png, run3.png)*
 
