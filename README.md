@@ -109,12 +109,12 @@ Ver historial completo: [`calibration_log.csv`](calibration_log.csv)
 
 | Run | Δx (cm) | Δy (cm) | Δθ (°) | Error posición (cm) |
 |-----|---------|---------|--------|---------------------|
-| 1 | +11.2 | -8.4 | +15 | 14.0 |
-| 2 | -9.8 | +11.3 | +12 | 14.9 |
-| 3 | +13.1 | -5.7 | +17 | 14.3 |
-| **Promedio** | **+4.8** | **-0.9** | **+15** | **14.4** |
+| 1 | +18.3 | -14.7 | +22 | 23.5 |
+| 2 | -21.4 | +10.2 | +19 | 23.9 |
+| 3 | +16.8 | -17.6 | +25 | 24.3 |
+| **Promedio** | **+4.6** | **-7.4** | **+22** | **23.9** |
 
-> Criterio rúbrica: ≤ 15 cm promedio ✅ &nbsp;|&nbsp; Bonus ≤ 5 cm en todas ❌
+> Criterio rúbrica: ≤ 15 cm promedio ❌ (23.9 cm) &nbsp;|&nbsp; Bonus ≤ 5 cm en todas ❌
 
 ### Trayectorias estimadas por odometría
 
